@@ -13,12 +13,10 @@
 # under the License.
 ---
 - name: Copy sudoers includes into place.
+  become: yes
   template:
     dest: "{{ sudoers_file_includes_dest }}"
     group: "{{ sudoers_file_includes_group }}"
     mode: "{{ sudoers_file_includes_mode }}"
     owner: "{{ sudoers_file_includes_owner }}"
     src: "{{ sudoers_file_includes_src }}"
-
-- name: Validate configuration.
-  shell: "visudo -cf /etc/sudoers"
