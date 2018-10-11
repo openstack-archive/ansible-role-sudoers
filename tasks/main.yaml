@@ -12,7 +12,7 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 ---
-- include: "{{ sudoers_task }}.yaml"
+- include_tasks: "{{ sudoers_task }}.yaml"
   with_items: "{{ sudoers_task_manager }}"
   loop_control:
     loop_var: sudoers_task
