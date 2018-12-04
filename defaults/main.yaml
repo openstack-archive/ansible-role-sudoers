@@ -18,7 +18,7 @@ sudoers_task_manager:
 
 # tasks/install.yaml
 sudoers_package_name: sudo
-sudoers_package_state: installed
+sudoers_package_state: present
 
 sudoers_file_includes_dest: /etc/sudoers.d/
 sudoers_file_includes_group: root
