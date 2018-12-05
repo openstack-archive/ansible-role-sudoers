@@ -15,25 +15,17 @@
     parent: ansible-role-sudoers
     nodeset: ubuntu-bionic
 
-- job:
-    name: ansible-role-sudoers-ubuntu-xenial
-    parent: ansible-role-sudoers
-    nodeset: ubuntu-xenial
-
 - project:
     templates:
       - windmill-jobs-fedora-latest
       - windmill-jobs-bionic
-      - windmill-jobs-xenial
     check:
       jobs:
         - ansible-role-sudoers-fedora-latest
         - ansible-role-sudoers-ubuntu-bionic
-        - ansible-role-sudoers-ubuntu-xenial
         - tox-linters
     gate:
       jobs:
         - ansible-role-sudoers-fedora-latest
         - ansible-role-sudoers-ubuntu-bionic
-        - ansible-role-sudoers-ubuntu-xenial
         - tox-linters
