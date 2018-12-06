@@ -1,0 +1,9 @@
+Code-Review+2: Paul Belanger <pabelanger@redhat.com>
+Workflow+1: Paul Belanger <pabelanger@redhat.com>
+Code-Review+1: Brin Zhang <zhangbailin@inspur.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Thu, 06 Dec 2018 06:20:04 +0000
+Reviewed-on: https://review.openstack.org/623076
+Project: openstack/ansible-role-sudoers
+Branch: refs/heads/master
